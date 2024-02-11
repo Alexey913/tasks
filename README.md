@@ -1,9 +1,9 @@
 # [Tasks from leetcode](https://leetcode.com/problemset/)
 
 ## [Contest 384](contest_384)
-[3033. Замена -1 в матрице на максимальный эдемент в столбце](contest_384/3033_replace_-1_to_max_element_in col_matrix.py)
-[3034. Количество подмассивов, удовлетворяющих условиям паттерна](contest_384/3034_nums_of_subarr_match_pattern.py)
-[3035. Максимальное количество палиндромов после операций со словами в массиве](contest_384/3035_max_palindromes_after_operations.py)
+* [3033. Замена -1 в матрице на максимальный эдемент в столбце](contest_384/3033_replace_-1_to_max_element_in_col_matrix.py)
+* [3034. Количество подмассивов, удовлетворяющих условиям паттерна](contest_384/3034_nums_of_subarr_match_pattern.py)
+* [3035. Максимальное количество палиндромов после операций со словами в массиве](contest_384/3035_max_palindromes_after_operations.py)
 
 ## Other tasks
 [14. Максимальный общий перфикс строк массива](14_longest_common_perfix.py)
