@@ -10,30 +10,21 @@
 # сколько голов необходимо забить первой команде, чтобы победить,
 # не переводя игру в дополнительное время.
 
+# https://contest.yandex.ru/contest/59539/problems/B/
+
 g_1_1, g_2_1 = map(int, input().split(':'))
 g_1_2, g_2_2 = map(int, input().split(':'))
 is_home = int(input())
-first_result = g_1_1 - g_2_1
-second_result = g_1_2 - g_2_2
-if first_result > 0:
-    if second_result >= 0:
-        result = 0
-    else:
-        result = first_result + second_result
-        if is_home == 2:
-            result += 1
-elif first_result == 0:
-    if second_result > 0:
-        result = 0
-    elif second_result == 0:
-        result = 1
-    else:
-        result = - second_result
-        if is_home == 2:
-            result += 1
-else:
-    result = abs(first_result + second_result)
-    if is_home == 2:
-        result += 1
 
+result = 0
+common_delta = g_1_1 - g_2_1 + g_1_2 - g_2_2
+if common_delta == 0:
+    if g_1_2 <= g_1_1 and is_home == 1 or g_1_2 >= g_1_1 and is_home == 2 or g_1_1 == g_2_2:
+        result = 1
+elif common_delta < 0:
+    result = - common_delta
+    if is_home == 1 and result + g_1_2 < g_1_1:
+            result += 1
+    elif is_home == 2 and g_1_2 + result > g_1_1:
+        result += 1
 print(result)
