@@ -44,13 +44,20 @@ for day in weekend:
         if month != day[1]:
             temp += monthes[month]
         else:
-            temp += int(day[0]) - 1
+            temp += int(day[0])
             break
     temp %= 7
-    if temp + count_start_day - 1 > 7:
-        day.append(temp + count_start_day - 6)
+    if temp == 0:
+        if count_start_day > 1:
+            day.append(count_start_day - 1)
+        else:
+            day.append(7)
     else:
-        day.append(temp + count_start_day - 1)
+        if count_start_day + temp < 7:
+            day.append(count_start_day + temp - 1)
+        else:
+            day.append(count_start_day + temp - 8)
+
 print(weekend)
 
 
