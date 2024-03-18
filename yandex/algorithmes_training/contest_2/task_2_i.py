@@ -17,14 +17,10 @@ for k in y:
     else:
         step = 1
         while y[k] > 1:
-            if k - step > 0 and y[k-step] == 0:
-                y[k-step] = 1
-                y[k] -= 1
-                common_steps += 1
-            if k + step <= len(x) and y[k+step] == 0 and y[k] > 1:
+            if y[k+step] == 0:
                 y[k+step] = 1
                 y[k] -= 1
-                common_steps += 1
+                common_steps += step
             step += 1
 step_line = []
 for line in range(1, n+1):
