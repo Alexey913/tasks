@@ -2,13 +2,11 @@ from collections import defaultdict
 
 
 dictionary = input().split()
-words = {i: '' for i in input().split()}
-result = defaultdict(str)
+words = input().split()
+result = {}
 
 for word in words:
     for d in dictionary:
-        if word.startswith(d) and len(d) < len(result[word]):
+        if word.startswith(d) and len(result.setdefault(word, d)) > len(d):
             result[word] = d
-        else:
-            result[word] = word
-print(result)
+    print(result.setdefault(word, word), end =' ')
