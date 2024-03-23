@@ -1,0 +1,1 @@
+https://github.com/kostin-001/yandex_contest/blob/main/AlgorithmsIntensive/day_2/words_replacement.py
