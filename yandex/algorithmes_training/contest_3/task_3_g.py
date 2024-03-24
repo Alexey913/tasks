@@ -6,6 +6,6 @@ coord = set()
 for _ in range(n):
     coord.add(tuple(map(int, input().split())))
 result = defaultdict(list)
-for i in coord:
-    point_1 = i
-    if 
+# for i in coord:
+#     for p in range(n):
+#         if 
