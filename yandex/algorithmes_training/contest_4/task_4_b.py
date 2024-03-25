@@ -7,6 +7,7 @@ def search(count_cell):
     r = count_cell
     while r > l:
         mid = (l + r) // 2
+        
         if check_ships(mid) > count_cell:
             r = mid
         else:
@@ -24,9 +25,12 @@ def search(count_cell):
 def check_ships(max_ship):
     count = 0
     for i in range(max_ship // 2):
-        count += (max_ship - i) * (i + 1) + i
-    return count + max_ship - 1
+        count += 2 * (max_ship - i) * (i + 1) + max_ship
+    if max_ship % 2 != 0:
+        count += (max_ship - max_ship // 2) ** 2 + max_ship // 2 + 1
+    print(count)
+    return count + 1
 
 n = int(input())
 print(search(n))
-print(7 + 6*2 +5*3+4*4+3*5+2*6+1*7)
+# print(check_ships(5))
