@@ -1,5 +1,3 @@
-from fractions import Fraction
-
 def search(count_cell):
     if count_cell == 0 or count_cell == 1:
         return count_cell
@@ -10,7 +8,7 @@ def search(count_cell):
         # формулы вывел, сложив все члены, вынес за скобки количество клеток большоего корабля,
         # умножаем на формулу суммы и вычитаем сумму треугольных чисел + пробелы: формула суммы - 1
         # nes_cells = (mid ** 2 * (mid + 1)) / 2 - (mid ** 3 - mid) / 3 + mid * (mid + 1) / 2 - 1
-        # упрощаем формулу
+        # упрощаем формулу, умножаем на 6, чтобы избежать деления
         nes_cells_6 = mid * (mid ** 2 + 6 * mid + 5) - 6
         if nes_cells_6 > count_cell * 6:
             r = mid
