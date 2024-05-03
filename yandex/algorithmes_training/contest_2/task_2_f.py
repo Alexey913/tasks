@@ -1,3 +1,9 @@
+# F. Колесо Фортуны
+# https://contest.yandex.ru/contest/59540/problems/F/
+
+# Условие - ./task_2_f_readme.txt
+
+
 n = int(input())
 numbers = list(map(int, input().split()))
 a, b, k = map(int, input().split())

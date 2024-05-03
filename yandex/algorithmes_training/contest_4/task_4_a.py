@@ -1,3 +1,12 @@
+# A. Быстрый поиск в массиве
+# https://contest.yandex.ru/contest/59542/problems/
+
+
+# Дан массив из N целых чисел. Все числа от −10^9 до 10^9.
+# Нужно уметь отвечать на запросы вида “Cколько чисел имеют
+# значения от L до R?”.
+
+
 def search_down(down: int, numbers: list[int]) -> int:
     l = 0
     r = len(numbers) - 1

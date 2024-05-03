@@ -1,3 +1,12 @@
+# D. Повторяющееся число
+# https://contest.yandex.ru/contest/59541/problems/D/
+
+
+# Вам дана последовательность измерений некоторой величины.
+# Требуется определить, повторялась ли какое-либо число,
+# причём расстояние между повторами не превосходило k.
+
+
 # with open('input.txt', 'r') as f:
 #     n, k = map(int, f.readline().split())
 #     nums = list(map(int, f.readline().split()))

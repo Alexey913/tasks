@@ -1,3 +1,11 @@
+# D. Шахматная доска
+# https://contest.yandex.ru/contest/59540/problems/D/
+
+# Из шахматной доски по границам клеток выпилили связную
+# (не распадающуюся на части) фигуру без дыр.
+# Требуется определить ее периметр.
+
+
 n = int(input())
 touches = [tuple(map(int, input().split())) for _ in range(n)]
 exclude_sides = 0

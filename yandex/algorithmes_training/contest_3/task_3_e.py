@@ -1,3 +1,10 @@
+# E. Два из трех
+# https://contest.yandex.ru/contest/59541/problems/E/
+
+# Вам даны три списка чисел. Найдите все числа, которые
+# встречаются хотя бы в двух из трёх списков.
+
+
 from collections import defaultdict
 
 

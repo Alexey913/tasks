@@ -1,15 +1,10 @@
-# def sort_coordinate(data):
-#     if len(data) < 2:
-#         return data
-#     else:
-#         pivot = data[len(data) // 2]
-#         print(pivot)
-#         less = [i for i in data if i[0] <= pivot[0]]
-#         print(less)
-#         more = [i for i in data if i[0] > pivot[0]]
-#         print(more)
-#         return sort_coordinate(less) + pivot + sort_coordinate(more)
-    
+# A. Минимальный прямоугольник
+# https://contest.yandex.ru/contest/59540/problems/
+
+# На клетчатой плоскости закрашено K клеток.
+# Требуется найти минимальный по площади прямоугольник,
+# со сторонами, параллельными линиям сетки, покрывающий
+# все закрашенные клетки.   
     
 
 k = int(input())
